@@ -7,7 +7,7 @@ export default defineConfig({
     {
       name: 'html-fallback',
       configureServer(server) {
-        server.middlewares.use((req, res, next) => {
+        server.middlewares.use((req, _res, next) => {
           if (req.url && !req.url.startsWith('/api') && !req.url.includes('.')) {
             req.url = '/index.html'; // Redirect non-static requests to index.html
           }
