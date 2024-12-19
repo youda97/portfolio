@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   darkMode: "class", // Enables 'class' based dark mode switching
   theme: {
     extend: {
