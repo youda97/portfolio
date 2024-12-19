@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  server: {
+    // Default Vite development server configuration
+    open: true, // Automatically open the app in the browser
+  },
+  build: {
+    rollupOptions: {
+      input: './index.html', // Ensures the entry file is correct
+    },
+  },
+});
