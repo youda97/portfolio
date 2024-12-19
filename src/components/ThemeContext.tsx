@@ -10,31 +10,33 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null); // Start with null
+  const [isDarkMode, setIsDarkMode] = useState<boolean | null>(null);
 
   useEffect(() => {
-    const theme = localStorage.getItem("theme") === "dark";
-    setIsDarkMode(theme);
-    if (theme) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
+    // Check localStorage for theme, fallback to dark theme if none is set
+    const savedTheme = localStorage.getItem("theme");
+    const initialTheme = savedTheme === "dark" || !savedTheme; // Default to dark
+
+    setIsDarkMode(initialTheme);
+    document.documentElement.classList.toggle("dark", initialTheme);
+
+    if (!savedTheme) {
+      // Save the default dark theme to localStorage
+      localStorage.setItem("theme", "dark");
     }
-  }, []); // Run only on mount
+  }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode((prev) => !prev);
-    if (!isDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    setIsDarkMode((prev) => {
+      const newTheme = !prev;
+      document.documentElement.classList.toggle("dark", newTheme);
+      localStorage.setItem("theme", newTheme ? "dark" : "light");
+      return newTheme;
+    });
   };
 
   if (isDarkMode === null) {
-    return null; // Prevent rendering until the theme is resolved
+    return null; // Prevent rendering until theme is determined
   }
 
   return (
