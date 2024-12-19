@@ -22,7 +22,7 @@ const projects: Project[] = [
     projectType: "Personal Portfolio Website",
     client: "Myself",
     languages: "React, Tailwind CSS",
-    previewLink: "Coming soon...",
+    previewLink: "https://portfolio-yousefouda.vercel.app/",
   },
   {
     id: 3,
