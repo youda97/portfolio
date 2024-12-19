@@ -1,3 +1,5 @@
+import aspectRatio from "@tailwindcss/aspect-ratio";
+
 export default {
   darkMode: "class", // Enables 'class' based dark mode switching
   theme: {
@@ -40,6 +42,6 @@ export default {
       pattern: /border-t-(violet|red|purple|blue|amber|pink|lime|orange|green|yellow)/,
     }
   ],
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [aspectRatio],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
 };
