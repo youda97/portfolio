@@ -209,7 +209,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ selectedColor }) => {
               <img
                 src={selectedProject.image}
                 alt="Portfolio Image"
-                className="m-auto max-h-[350px] rounded-md mt-4"
+                className="mx-auto max-h-[350px] rounded-md mt-4"
               />
             </div>
           </div>
