@@ -63,7 +63,7 @@ const Home: React.FC<HomeProps> = ({ selectedColor, triggerAnimation }) => {
               </span>
             </h1>
             <p className="text-base leading-relaxed lg:leading-loose text-left sm:text-center lg:text-left">
-              I’m a Canadian-based front-end developer with 5+ years of
+              I’m a Canadian-based front-end developer with 6+ years of
               experience crafting clean, intuitive, and high-performance user
               interfaces. Specializing in React, Angular, and TypeScript, I
               build scalable solutions that enhance usability and performance.

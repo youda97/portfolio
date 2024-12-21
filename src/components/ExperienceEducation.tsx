@@ -28,7 +28,7 @@ const ExperienceEducation: React.FC<ExperienceEducationProps> = ({
         <ul>
           {[
             {
-              year: "2024 - Present",
+              year: "2024",
               title: "Intermediate Front-End Developer",
               company: "TikTok / DataPower",
               description:

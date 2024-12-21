@@ -12,10 +12,10 @@ const Skills: React.FC<SkillsProps> = ({ selectedPrimaryColor, bgColor }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   const skills = [
-    { name: "HTML", percentage: 85 },
-    { name: "JavaScript", percentage: 90 },
-    { name: "TypeScript", percentage: 85 },
-    { name: "CSS", percentage: 80 },
+    { name: "HTML", percentage: 90 },
+    { name: "JavaScript", percentage: 95 },
+    { name: "TypeScript", percentage: 95 },
+    { name: "CSS", percentage: 90 },
 
     { name: "React", percentage: 95 },
     { name: "Angular", percentage: 75 },
@@ -27,12 +27,12 @@ const Skills: React.FC<SkillsProps> = ({ selectedPrimaryColor, bgColor }) => {
     { name: "SQL", percentage: 65 },
     { name: "MongoDB", percentage: 55 },
 
-    { name: "Tailwind CSS", percentage: 75 },
-    { name: "SCSS/SASS", percentage: 75 },
+    { name: "Tailwind CSS", percentage: 85 },
+    { name: "SCSS/SASS", percentage: 85 },
     { name: "Responsive Design", percentage: 80 },
-    { name: "RESTful APIs", percentage: 85 },
+    { name: "RESTful APIs", percentage: 90 },
 
-    { name: "Git/GitHub/GitLab", percentage: 75 },
+    { name: "Git/GitHub/GitLab", percentage: 85 },
     { name: "Agile Methodologies", percentage: 90 },
     { name: "Figma", percentage: 60 },
     { name: "Accessibility Standards (WCAG, ARIA)", percentage: 80 },
