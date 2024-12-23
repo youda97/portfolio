@@ -13,7 +13,7 @@ interface AchievementsProps {
 
 const Achievements: React.FC<AchievementsProps> = ({ selectedColor }) => {
   const achievements: Achievement[] = [
-    { value: 5, label: "Years of Experience" },
+    { value: 6, label: "Years of Experience" },
     { value: 50, label: "Completed Projects" },
     { value: 100, label: "Interfaces Designed & Developed" },
     { value: 10, label: "Frameworks & Libraries Mastered" },

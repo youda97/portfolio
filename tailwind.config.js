@@ -7,6 +7,7 @@ export default {
     extend: {
       screens: {
         'custom-md-1': { min: '992px', max: '1100px' },
+        'custom-sm-1': { min: '0px', max: '400px' },
       },
       colors: {
         violet: { DEFAULT: "#8b5cf6" },

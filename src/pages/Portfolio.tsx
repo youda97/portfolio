@@ -205,10 +205,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ selectedColor }) => {
             className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto"
             style={{ backgroundColor: "rgba(0,0,0,.85)" }}
           >
-            <div
-              className="relative dark:bg-zinc-800 bg-white dark:text-white text-gray-800 rounded-lg sm:p-8 p-6 w-full md:max-w-2xl shadow-lg scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800"
-              style={{ maxHeight: "90vh", overflow: "auto" }} // Ensure scrolling for content
-            >
+            <div className="flex flex-col custom-sm-1:justify-start relative dark:bg-zinc-800 bg-white dark:text-white text-gray-800 rounded-lg sm:p-8 p-6 custom-sm-1:px-6 custom-sm-1:pt-16 custom-sm-1:pb-6 w-full overflow-auto h-full md:max-h-[90vh] md:max-w-2xl shadow-lg scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800">
               <button
                 className="fixed top-7 right-7 dark:text-white text-gray-800 w-8 h-8 flex items-center justify-center"
                 onClick={() => closeModal()}

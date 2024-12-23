@@ -40,10 +40,10 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({
             onClick={() => openModal(project)}
           >
             <div
-              className="absolute inset-0 bg-cover bg-center blur-lg"
+              className="absolute inset-0 bg-cover bg-center blur-lg m-auto w-[88%]"
               style={{
                 backgroundImage: `url(${project.image})`,
-                filter: "blur(10px)",
+                filter: "blur(20px)",
               }}
             ></div>
             {/* Container with fixed aspect ratio */}

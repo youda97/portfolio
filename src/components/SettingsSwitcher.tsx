@@ -58,7 +58,7 @@ const SettingsSwitcher: React.FC<SettingsSwitcherProps> = ({
   };
 
   return (
-    <div className="fixed sm:block hidden left-0 top-[16%] z-10 w-[223px]">
+    <div className="fixed sm:block hidden left-0 top-[16%] z-[19] w-[223px]">
       {/* Switcher Content */}
       <div
         className={`bg-white text-black p-4 rounded-r-lg shadow-lg transition-transform duration-300 ease-in-out ${

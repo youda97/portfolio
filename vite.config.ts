@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [
     react(),
+    // Comment out below in dev mode
     {
       name: 'html-fallback',
       configureServer(server) {

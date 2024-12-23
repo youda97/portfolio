@@ -158,7 +158,7 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
                 </p>
 
                 <p className="font-semibold sm:text-base text-sm">
-                  Gym, Soccer, Taekwondo, Traveling, Coding
+                  Gym, Soccer, Taekwondo, Anime, Traveling, Coding
                 </p>
               </div>
             </div>
