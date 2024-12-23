@@ -1,4 +1,5 @@
 import aspectRatio from "@tailwindcss/aspect-ratio";
+import scrollbar from  'tailwind-scrollbar';
 
 export default {
   darkMode: "class", // Enables 'class' based dark mode switching
@@ -42,6 +43,9 @@ export default {
       pattern: /border-t-(violet|red|purple|blue|amber|pink|lime|orange|green|yellow)/,
     }
   ],
-  plugins: [aspectRatio],
+  plugins: [aspectRatio, scrollbar],
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  variants: {
+    scrollbar: ['dark'],
+  },
 };

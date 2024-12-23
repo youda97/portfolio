@@ -4,6 +4,10 @@ export interface Project {
   image: string;
   projectType: string;
   languages: string;
-  client?: string;
-  previewLink?: string;
+  client: string;
+  previewLink: string;
+  description: string;
+  type: string;
+  videoId?: string;
+  videoSrc?: string;
 }
