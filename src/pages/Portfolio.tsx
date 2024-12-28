@@ -138,7 +138,7 @@ const projects: Project[] = [
       "A dynamic directory for bird watchers, enabling the user to track and monitor their progress and activity. Made use of information systems and data management tools like SQL.",
     previewLink: "https://github.com/youda97/StorkDB/tree/master/Assignment4",
     type: "video",
-    videoSrc: "",
+    videoSrc: "/videos/storkdb.mp4",
   },
   {
     id: 11,
