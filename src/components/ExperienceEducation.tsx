@@ -29,7 +29,7 @@ const ExperienceEducation: React.FC<ExperienceEducationProps> = ({
           {[
             {
               year: "2024",
-              title: "Intermediate Front-End Developer",
+              title: "Front-End Engineer II",
               company: "TikTok / DataPower",
               description:
                 "Enhanced user engagement with data visualization improvements, introduced advanced permission management, and streamlined CDN migration for cost-efficiency and reliability.",
