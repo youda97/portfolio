@@ -42,15 +42,17 @@ const Home: React.FC<HomeProps> = ({ selectedColor, triggerAnimation }) => {
           {/* Image */}
           <div className="relative lg:flex-none lg:w-1/3 lg:h-[calc(100vh-80px)] hidden sm:flex">
             <img
-              src="/images/profile_picture.png"
+              src="/images/profile_picture.JPG"
               alt="Steve Milner"
-              className="hidden lg:block w-full h-full object-cover rounded-3xl shadow-lg"
+              className="hidden lg:block w-full h-full object-cover object-top rounded-3xl shadow-lg"
             />
-            <img
-              src="/images/profile_picture.png"
-              alt="My Picture"
-              className="lg:hidden rounded-full w-64 h-64 mx-auto mb-6 border-4 border-solid dark:border-gray-700 border-gray-300"
-            />
+            <div className="lg:hidden mx-auto mb-6 w-64 h-64 rounded-full border-4 border-solid dark:border-gray-700 border-gray-300 overflow-hidden">
+              <img
+                src="/images/profile_picture.JPG"
+                alt="My Picture"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
           </div>
           {/* Text Content */}
           <div className="flex flex-col sm:items-center lg:items-start lg:text-left mx-auto space-y-6 lg:max-w-[605px] custom-md-1:max-w-[450px] flex-1">

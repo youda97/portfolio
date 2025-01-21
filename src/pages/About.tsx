@@ -70,11 +70,13 @@ const About: React.FC<AboutProps> = ({ selectedColor }) => {
 
             {/* Top Image */}
             <div className="sm:hidden block mx-auto mb-10 flex justify-center">
-              <img
-                className="rounded-full border-4 border-solid dark:border-gray-700 border-gray-300 w-56 h-56"
-                src="/images/profile_picture.png"
-                alt="Profile"
-              />
+              <div className="rounded-full border-4 border-solid dark:border-gray-700 border-gray-300 w-56 h-56 overflow-hidden">
+                <img
+                  className="w-full h-full object-cover object-top"
+                  src="/images/profile_picture.JPG"
+                  alt="Profile"
+                />
+              </div>
             </div>
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="sm:flex block flex-wrap">
